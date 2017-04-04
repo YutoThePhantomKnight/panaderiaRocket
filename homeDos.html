@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/homeUno.css">
+    <link rel="stylesheet" type="text/css" href="css/homeDos.css">
     <link rel="icon" type="image/png" href="img/favicon.png" />
   </head>
   <body>
@@ -13,13 +13,8 @@
     </div>
 
     <div class="unoYMedio">
-      <form action="homeDos.html" method="get">
-        <label for="usuario">Usuario</label>
-        <input type="text" id="user" name="user" placeholder="Usuario" />
-        <label for="pass">Contraseña</label>
-        <input type="password" id="pass" name="pass" placeholder="******" />
-        <input type="submit" value="Entrar" class="login" onclick="verificar();"></input>
-      </form>
+      Bienvenido, <span class="palabraUser">@Panchou</span>
+
     </div>
 
     <div class="dos">
@@ -98,14 +93,6 @@
 
     function principio () {
       document.getElementById('uno').src = "img/bannerUno.jpg";
-    }
-
-    function verificar () {
-      if(document.getElementById('user').value=='panchou' && document.getElementById('pass').value=='1234'){
-        document.form.submit();
-      }else{
-        alert("Usuario y/o contraseña no validos");
-      }
     }
   </script>
 
